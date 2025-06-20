@@ -1,4 +1,10 @@
-name: deploy-container-template
+name: deploy-content
+# This workflow deploys the content of the container package to an S3 bucket
+# It triggers on pushes to the main branch, specifically for changes in the container package
+# It uses the AWS CLI to sync the built content to the specified S3 bucket
+# The AWS credentials are stored in GitHub secrets for security
+# The workflow runs on the latest Ubuntu environment
+# The working directory for the steps is set to 'packages/container'
 
 on:
   push:
