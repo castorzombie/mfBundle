@@ -79,7 +79,7 @@ export default function Header({ signedIn, onSignOut }) {
             component={RouterLink}
             to="/"
           >
-            App RIGHT NOW
+            App RIGHT NOW LATEST
           </Typography>
           <Button
             color="primary"
